@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'italianaregular';
+    src: url('./fonts/italiana-regular-webfont.woff2') format('woff2'),
+         url('./fonts/italiana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts.roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('./fonts/roboto-italic-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-italic-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'robotoregular', serif;
+    line-height: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.visual {
+    position: relative;
+    height: 100vh;
+    width: 60vh;        
+    overflow: hidden;
+    flex: 0 0 1;
+    min-width: 300px;
+}
+.link {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+a {
+    color: white;
+}
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: 'italianaregular';
+    padding: 0.5em 0 0.5em 0;
+}
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;  
+}
+
+.sign-in {
+    width: 100vh;
+}
