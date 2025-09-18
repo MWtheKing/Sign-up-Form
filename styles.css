@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        line-height: calc(1em + 0.5rem);
+    line-height: calc(1em + 0.5rem);
 }
 
 html, body {
@@ -48,15 +48,17 @@ body {
 
 .container {
     display: flex;
+    min-height: 100vh;
     flex-direction: row;
 }
 .visual {
-    position: relative;
-    height: 100vh;
-    width: 60vh;        
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
-    flex: 0 0 1;
-    min-width: 360px;
+    position: relative;
+    height: 100vh;      
 }
 .link {
     position: absolute;
@@ -87,16 +89,19 @@ a {
     font-family: 'italianaregular';
     padding: 0.5em 0 0.5em 0;
 }
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;  
+.img {
+    flex: 1;
+    width: 100%;
+    background: url(./background_img.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
 }
 
 .sign-in {
-    width: 100%;
+    flex: 1.8;
     display: flex;
     flex-direction: column;
     background-color: #f5f4f4;
@@ -131,33 +136,34 @@ img {
 .form div[class*="row"] {
     display: flex;
     font-size: 1em;
+    flex-wrap: wrap;
     padding: 0;
     border-radius: 1em;
     font-family: sans-serif;
     width: 100%;
+    gap: 1em;
 }
 .form label {
     padding: 0;
     font-size: 0.7rem;
     font-weight: bold;
 }
-label, input, button {
+label, button {
     font-size: inherit;
     padding: 0.2em;
     padding-left: 0;
     margin: 0;
-    margin-right: 4em;
 }
 label {
     gap: 16px;
     color: #333333;
 }
 input {
-    width: 300px;
-    min-width: 0.5em;
-    padding-left: 5px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    flex: 1 1 auto;
+    min-width: 120px;
+    max-width: 100%;
+    width: auto;
+    padding: 4px 5px;
     font-size: 1em;
     border-radius: 5px;
     border: 2px solid #E5E7EB;
@@ -172,6 +178,8 @@ input[type="password"]:invalid {
 }
 .form div[class*="input"] {
     display: flex;
+    flex: 1;
+    margin-right: 2em;
     flex-direction: column;
     margin-bottom: 1em;
 }
