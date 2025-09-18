@@ -16,33 +16,32 @@
         
         <div class="sign-in">
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aliquam tempora maiores quae repellendus pariatur id eveniet ad distinctio 
-                libero blanditiis! Quis, necessitatibus vel saepe autem suscipit accusamus 
+                Aliquam tempora maiores quae repellendus pariatur id eveniet ad distinctio  
                 temporibus excepturi reprehenderit.<br>
                 <br>
-                You know you want to.
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form">
                 <div class="form-content">
                     
-                    <h2>Let's do this!</h2>
+                    <h2>Account Form</h2>
                     <form action="#" method="post">
                         <div class="form-inputs">
                     
                             <div class="row-one">
                                     <div class="input-first-name">
                                         <label for="first-name">FIRST NAME</label>
-                                        <input type="text" id="first-name" value="">
+                                        <input type="text" id="first-name" value=""minlength="1" maxlength="100" required>
                                     </div>
                                     <div class="input-last-name">
                                         <label for="last-name">LAST NAME</label>
-                                        <input type="text" id="last-name" value="">
+                                        <input type="text" id="last-name" value="" minlength="1" maxlength="100" required>
                                     </div>
                             </div>
                             <div class="row-two">
                                     <div class="input-email">
                                         <label for="user-email">EMAIL</label>
-                                        <input type="email" id="user-email" value="">
+                                        <input type="email" id="user-email" value="" required>
                                     </div>
                                     <div class="input-phone">
                                         <label for="user-phone">PHONE NUMBER</label>
@@ -52,11 +51,11 @@
                             <div class="row-three">
                                     <div class="input-password">
                                         <label for="user-password">PASSWORD</label>
-                                        <input type="password" id="user-password" value="" required>
+                                        <input type="password" id="user-password" value="" minlength="8" required>
                                     </div>
                                     <div class="input-password-confirm">
                                         <label for="user-password">CONFIRM PASSWORD</label>
-                                        <input type="password" id="user-password-confirm" value="" required>
+                                        <input type="password" id="user-password-confirm" value="" minlength="8" required>
                                     </div>
                             </div>
                 </div>
@@ -65,6 +64,7 @@
                         <div class="form-btn">
                             <button type="submit">Create Account</button>
                         </div>
+                        <div class="log-in">Already have an account? <a href="#">Log in</a></div>
                 </form>
             </div>
             
